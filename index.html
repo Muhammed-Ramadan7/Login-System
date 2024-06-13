@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="icon" href="img/login icon.jpg">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div id="login" class="d-flex justify-content-center align-items-center flex-column">
+            <div class="container shadow-lg py-5 w-75 text-center rounded-2">
+                <div class="login-content">
+                    <p class="fw-bold mb-2 fs-4">Do not you have account?</p>
+                    <button class="mb-2 sign-btn py-2 px-3" id="signUp-btn">Sign Up</button>
+                    <h2 class="fs-1">Welcom</h2>
+                </div>
+                <div class="login-inputs py-3">
+                    <input type="email"  placeholder="Enter your Email" class="form-control mb-3" id="email-input">
+                    <input type="password"  placeholder="Enter your password" class="form-control mb-3" id="password-input">
+                    <div class="alert alert-danger d-none" id="loginAlert">Sorry, your password or your email is incorrect</div>
+                    <button class="login-btn py-2 px-3" id="login-btn">Login</button>
+                </div>
+            </div>
+        </div> 
+            <form action="" id="sign-up"  class="d-none justify-content-center align-items-center flex-column">
+                    <div class="container shadow-lg py-5 w-75 text-center rounded-2">
+                        <div class="login-content">
+                            <h2 class="fs-1">Welcom</h2>
+                        </div>
+                        <div class="login-inputs py-3">
+                            <input type="text"  placeholder="Enter your Name" class="form-control mb-3" id="sign-name">
+                            <input type="email"  placeholder="Enter your Email" class="form-control mb-3" id="sign-email">
+                            <input type="password"  placeholder="Enter your password" class="form-control mb-3" id="signPassword">
+                            <div class="alert alert-danger d-none" id="nameAlert">At least three character for your name</div>
+                            <div class="alert alert-danger d-none"  id="emailAlert">please enter avalid email</div>
+                            <div class="alert alert-info d-none"  id="successAlert">success you can login now</div>
+                            <div class="alert alert-danger d-none"  id="existAlert">this email is arleady exist</div>
+                            <div class="alert alert-danger d-none"  id="passwordAlert">must contain At least 8 character <br> and must contain number, capital char and symbols like @ #</div>
+                            <button class="sign-btn2 py-2 px-3 mb-3" id="sign-btn2">sign-up</button>
+                            <p class="fw-bold mb-2 fs-4"> You have an account?<a href=""> signIn</a></p>
+                        </div>
+                    </div>
+            </form>
+
+        <div id="output" class="d-none justify-content-center align-items-center flex-column">
+            <div class="container shadow-lg py-5 w-50 text-center rounded-2">
+                <h1>Welcome <span id="theUserName" class="fw-bold"></span></h1>
+                <button class="mt-4 logout-btn py-2 px-3" id="logOutBtn">Log Out</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
